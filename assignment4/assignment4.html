@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marks Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f6f9;
+      margin-top: 80px;
+    }
+    input {
+      padding: 8px;
+      font-size: 16px;
+      margin: 5px;
+      width: 100px;
+      text-align: center;
+    }
+    button {
+      padding: 8px 15px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #result {
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Marks Calculator</h2>
+  <p>Enter marks for 3 subjects:</p>
+
+  <input type="number" id="m1" placeholder="Subject 1" min="0" max="100">
+  <input type="number" id="m2" placeholder="Subject 2" min="0" max="100">
+  <input type="number" id="m3" placeholder="Subject 3" min="0" max="100">
+  <br><br>
+  <button onclick="calculate()">Show Result</button>
+
+  <div id="result"></div>
+
+  <script>
+  function calculate() {
+  
+   var v1 = document.getElementById("m1").value.trim();
+   var v2 = document.getElementById("m2").value.trim();
+   var v3 = document.getElementById("m3").value.trim();
+
+  if (v1 === "" || v2 === "" || v3 === "") {
+    document.getElementById("result").innerText = "Please enter marks for all subjects.";
+    return;
+  }
+  if (isNaN(m1) || isNaN(m2) || isNaN(m3) ||m1 < 0 || m1 > 100 || m2 < 0 || m2 > 100 || m3 < 0 || m3 > 100) {
+    document.getElementById("result").innerText = "Enter your marks between 0 and 100.";
+    return;
+  }
+
+
+  var m1 = Number(v1);
+  var m2 = Number(v2);
+  var m3 = Number(v3);
+
+  var total = m1 + m2 + m3;
+  var avg = total / 3;
+  var grade = "";
+
+  if (avg >= 90) grade = "A";
+  else if (avg >= 75) grade = "B";
+  else if (avg >= 60) grade = "C";
+  else grade = "Fail";
+
+  document.getElementById("result").innerHTML =
+    "Total Marks: " + total + "<br>" +
+    "Average Marks: " + avg.toFixed(2) + "<br>" +
+    "Grade: " + grade;
+}
+</script>
+
+
+</body>
+</html>
