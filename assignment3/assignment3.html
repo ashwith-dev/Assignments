@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Star Pattern</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 80px; }
+    input, button { padding: 8px; font-size: 16px; margin: 6px; }
+    #out { white-space: pre; font-family: monospace; margin-top: 12px; }
+  </style>
+</head>
+<body>
+
+  <h2>Print Star Pattern</h2>
+  <input type="number" id="n" placeholder="Enter n" min="1">
+  <button onclick="printPattern()">Print</button>
+
+  <div id="out"></div>
+
+  <script>
+    function printPattern() {
+      let n = parseInt(document.getElementById('n').value);
+      if (!n || n < 1) {
+        document.getElementById('out').innerText = "Enter a positive integer.";
+        return;
+      }
+       if (n > 1000) {
+    document.getElementById('out').innerText = "Number too large! Enter a number up to 1000.";
+    return;
+  }
+      let result = "";
+      for (let i = 1; i <= n; i++) {
+        result += "*".repeat(i) + "\n";
+      }
+      document.getElementById('out').innerText = result;
+    }
+  </script>
+
+</body>
+</html>
