@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body {
+        font-family: 'Courier New', monospace;
+        background-image: url('https://imgs.search.brave.com/DZWBfvM8Mb7r4qkjuzvnXxpplrsslNi8NvMPUBTXLUA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMS8w/My8xMy8xNy8yOC9u/dW1iZXJzLTYwOTIz/NDhfNjQwLmpwZw');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+}
+
+#main {
+        background-color: rgba(149, 77, 77, 0.85);
+        border: 2px solid rgba(227, 88, 88, 0.5);
+        border-radius: 12px;
+        padding: 40px;
+        backdrop-filter: blur(10px);
+        position: relative;
+}
+
+#number{
+        padding: 10px 15px;
+        border-radius: 10px;
+        background-color: #974139;
+        color: #d9dd0c;
+        font-size: 25px;
+}
+
+h2 {
+    text-align: center;
+    color: #d9dd0c;
+    margin-bottom: 30px;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+#show{
+    padding: 15px 30px;
+    margin-left: 15px;
+}
+
+button {
+        padding: 12px 30px;
+        font-size: 18px;
+        background-color: #383838;
+        color: #e0e0e0;
+        border: 2px solid rgba(100, 100, 100, 0.5);
+        border-radius: 6px;
+        cursor: pointer;
+        font-family: 'Courier New', monospace;
+        font-weight: bold;
+        transition: all 0.3s ease;
+}
+
+button:hover {
+        background-color: #484848;
+        border-color: rgba(150, 150, 150, 0.8);
+}
+
+#result {
+        margin-top: 20px;
+        padding: 20px;
+        background: rgb(114, 48, 48);
+        border-radius: 8px;
+        border: 1px solid rgba(157, 18, 18, 0.619);
+        color: #1ddd0c;
+        font-weight: bold;
+        width: 375px;
+        height: 230px;
+        margin-left: 20px;
+}
+     
