@@ -9,8 +9,8 @@
     return;
   }
       let result = "";
-      for (let i = 1; i <= n; i++) {
-        result += "*".repeat(i) + "\n";
+      for (let i = 1; i <= n; i+=1) {
+        result += "*".repeat(i)+"\n";
       }
       document.getElementById('result').innerText = result;
     }
