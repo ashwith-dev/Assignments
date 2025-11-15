@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  background: #0a1628;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  background-image: url(/assignment3/background3.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main{
+  display: flex;
+  justify-content: center;
+  min-height: 300px;
+}
+
+#design {
+  text-align: center;
+  border: 2px solid white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 300px;
+  gap: 30px;
+}
+
+#heading_div{
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #8074747e;
+  padding: 10px 60px;
+  width: 554px;
+  height: 65px;
+  position: sticky;
+}
+
+#heading {
+  color: rgb(213, 193, 193);
+  text-align: center;
+  font-family: "Sixtyfour", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#n {
+  padding: 20px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.173);
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+  width: 644px;
+  height: 55px;
+  position: sticky;
+}
+
+#print {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #63696f70;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+  position: sticky;
+  width: 674px;
+  height: 55px;
+}
+
+#print:hover {
+  background-color: #bac5d0b6;
+}
+
+#result {
+  color: white;
+  font-family: monospace;
+  text-align: center;
+  line-height: 1.2;
+  margin-top: 20px;
+}
