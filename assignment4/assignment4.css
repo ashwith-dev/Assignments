@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(/assignment4/background4.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ #main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+ }  
+
+ #marks_calc{
+    border: 2px solid white;
+    margin-right: 10px;
+    margin-left: 300px;
+    padding: 10px 200px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+
+ #heading{
+    color: white;
+    font-size: 70px;
+    margin: 0px;
+    margin: 10px;
+    font-family: "Rubik Burned", system-ui;
+    font-weight: 400;
+    font-style: normal;
+ }
+
+ #sta{
+    color: white;
+    margin-bottom: 25px;
+    font-family: "Rubik Puddles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+ }
+   
+.inputs {
+    padding: 8px;
+    font-size: 16px;
+    margin: 5px;
+    width: 100px;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 15px 50px;
+    font-size:x-large;
+    color: white;
+    font-family: "Barrio", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#marks{
+    display: flex;
+    gap: 30px;
+}
+
+#output{
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+}
+   
+#show {
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: rgba(254, 254, 254, 0.144);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 130px;
+    width: 130px;
+    border: 2px solid white;
+    font-size: xx-large;
+}
+   
+#show:hover {
+    background-color: #ffffff58;
+    transition: all 0.4s ease;
+}
+   
+#result {
+    margin: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 0px 50px ;
+    border-radius: 10px;
+    color: white;
+    font-family: "Rubik Maze", system-ui;
+    font-weight: 400;
+    font-style: normal;
+ }
