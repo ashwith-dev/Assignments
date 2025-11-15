@@ -3,38 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <title>Star Pattern</title>
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin-top: 80px; }
-    input, button { padding: 8px; font-size: 16px; margin: 6px; }
-    #out { white-space: pre; font-family: monospace; margin-top: 12px; }
-  </style>
+  <link rel="stylesheet" href="/assignment3/assignment3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@400..900&family=Rubik+80s+Fade&family=Sixtyfour&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <h2>Print Star Pattern</h2>
-  <input type="number" id="n" placeholder="Enter n" min="1">
-  <button onclick="printPattern()">Print</button>
-
-  <div id="out"></div>
-
-  <script>
-    function printPattern() {
-      let n = parseInt(document.getElementById('n').value);
-      if (!n || n < 1) {
-        document.getElementById('out').innerText = "Enter a positive integer.";
-        return;
-      }
-       if (n > 1000) {
-    document.getElementById('out').innerText = "Number too large! Enter a number up to 1000.";
-    return;
-  }
-      let result = "";
-      for (let i = 1; i <= n; i++) {
-        result += "*".repeat(i) + "\n";
-      }
-      document.getElementById('out').innerText = result;
-    }
-  </script>
-
+  <div id="main">
+    <div id="design">
+      <div id="heading_div">
+        <h2 id="heading">Print Star Pattern</h2>
+      </div>
+     <input type="number" id="n" placeholder="Enter n">
+     <button onclick="pattern()" id="print">Print</button>
+     <div id="empty"></div>
+     <div id="result">Output</div>
+  </div>
+  </div>
+<script src="/assignment3/assignment3.js"></script>
 </body>
 </html>
