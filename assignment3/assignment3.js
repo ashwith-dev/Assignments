@@ -1,5 +1,5 @@
  function pattern() {
-      let n = document.getElementById('n').value;
+      let n = document.getElementById('num').value;
       if (!n || n < 1) {
         document.getElementById('result').innerText = "Enter a positive integer.";
         return;
