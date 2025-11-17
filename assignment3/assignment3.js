@@ -5,9 +5,9 @@
         return;
       }
        if (n > 100) {
-    document.getElementById('result').innerText = "Number too large! Enter a number up to 100.";
-    return;
-  }
+          document.getElementById('result').innerText = "Number too large! Enter a number up to 100.";
+          return;
+      }
       let result = "";
       for (let i = 1; i <= n; i+=1) {
         result += "*".repeat(i)+"\n";
