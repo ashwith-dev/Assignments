@@ -1,5 +1,5 @@
 function calculateSum() {
-      let n = document.getElementById('numinput').value;
+      let n = document.getElementById('numInput').value;
       if (n < 1) {
         document.getElementById('result').innerText = "Please enter a valid number.";
         return;
