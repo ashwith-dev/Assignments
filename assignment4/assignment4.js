@@ -29,7 +29,7 @@ function calculate() {
   else grade = "Fail";
 
   document.getElementById("total").innerHTML = total
-  document.getElementById("avg_marks").innerHTML = avg
+  document.getElementById("avgMarks").innerHTML = avg
   document.getElementById("grade").innerHTML = grade
 
 }
